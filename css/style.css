@@ -111,7 +111,8 @@ p{ margin:0 0 1em 0; }
 .brand{
   font-family: var(--font-body);
   font-weight:900;
-  font-size: 1.4rem;
+  font-size: 2.8rem;
+  line-height: 1.15;
   display:flex;
   gap:2px;
 }
@@ -762,7 +763,7 @@ p{ margin:0 0 1em 0; }
   .hero{ padding-top: 118px; }
   .only-mobile{ display:inline; }
   .header-inner{ padding: 10px 16px; }
-  .brand{ font-size: 1.1rem; }
+  .brand{ font-size: 2.2rem; }
   .hero-title{ font-size: clamp(1.7rem, 9vw, 2.2rem); line-height: 1.28; }
   .hero-eyebrow{ font-size: 0.85rem; }
   .hero-sub{ font-size: 0.95rem; }
@@ -802,7 +803,7 @@ p{ margin:0 0 1em 0; }
   .container{ padding: 0 16px; }
   .hero-title, .section-title{ font-size: 1.6rem; }
   .booth-grid, .booth-grid-experience{ grid-template-columns: 1fr; }
-  .brand{ font-size: 1rem; }
+  .brand{ font-size: 2rem; }
 }
 
 /* ---- Touch target / tap area safety ---- */
