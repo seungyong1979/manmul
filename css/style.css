@@ -283,6 +283,12 @@ p{ margin:0 0 1em 0; }
 }
 .quote-block i{ font-size: 1.4rem; color: var(--blue-deep); }
 .quote-block p{ margin:0; font-family: var(--font-display); font-size: 1.2rem; }
+.overview-invite{
+  margin: 28px 0 0;
+  color: var(--blue-deep);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
 .overview-icons{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
