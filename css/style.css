@@ -297,40 +297,15 @@ p{ margin:0 0 1em 0; }
 }
 
 /* ---------- Flow (02) ---------- */
-.flow-list{
-  list-style:none;
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+.flow-visual{
   margin: 40px 0 32px;
-}
-.flow-step{
   background: var(--white);
   border: 3px solid var(--black);
   border-radius: var(--radius-md);
-  padding: 28px 20px;
-  text-align:center;
-  position: relative;
+  overflow:hidden;
   box-shadow: var(--shadow-card);
 }
-.flow-num{
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  color: var(--white);
-  background: var(--blue);
-  border: 2px solid var(--black);
-  width: 34px; height:34px;
-  border-radius: 50%;
-  display:flex; align-items:center; justify-content:center;
-  position:absolute; top:-17px; left: 50%; transform: translateX(-50%);
-}
-.flow-icon{
-  font-size: 2rem;
-  color: var(--blue-deep);
-  margin: 14px 0 10px;
-}
-.flow-step h3{ font-size: 1.2rem; margin-bottom: 8px; }
-.flow-step p{ font-size: 0.92rem; color: var(--gray-text); margin:0; }
+.flow-visual img{ width:100%; height:auto; }
 .flow-closing{
   text-align:center;
   font-family: var(--font-display);
@@ -739,7 +714,6 @@ p{ margin:0 0 1em 0; }
   .hero-visual{ max-width: 420px; margin: 0 auto; }
   .overview-grid, .costume-grid, .quest-grid{ grid-template-columns: 1fr; }
   .overview-visual{ max-width:720px; margin:24px auto 0; }
-  .flow-list{ grid-template-columns: repeat(2, 1fr); }
   .booth-grid{ grid-template-columns: repeat(2, 1fr); }
   .booth-grid-experience{ grid-template-columns: repeat(2, 1fr); }
   .conf-sessions{ grid-template-columns: 1fr; }
@@ -763,7 +737,6 @@ p{ margin:0 0 1em 0; }
   .section-title{ font-size: clamp(2rem, 8vw, 2.8rem); }
   .lead{ font-size: 1.1rem; }
   .quote-block{ flex-direction: column; text-align:center; padding: 20px; }
-  .flow-list{ grid-template-columns: repeat(2, 1fr); gap: 18px; }
   .costume-species{ grid-template-columns: repeat(2, 1fr); }
   .costume-questions{ font-size: 1.2rem; }
   .booth-grid{ grid-template-columns: repeat(2, 1fr); }
@@ -799,8 +772,6 @@ p{ margin:0 0 1em 0; }
   .hero-visual{ max-width: 300px; }
   .section-tag{ font-size: 0.85rem; padding: 5px 14px; }
   .section-title{ font-size: clamp(1.7rem, 9vw, 2.2rem); line-height: 1.28; }
-  .flow-list{ grid-template-columns: 1fr; gap: 16px; }
-  .flow-step{ padding: 24px 18px; }
   .costume-species{ grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .costume-questions{ font-size: 1.05rem; }
   .costume-tags{ gap: 8px; }
