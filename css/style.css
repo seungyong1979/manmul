@@ -80,6 +80,7 @@ p{ margin:0 0 1em 0; }
   line-height: 1.2;
   margin-bottom: 24px;
   letter-spacing: normal;
+  word-break: keep-all;
 }
 .section-title-light{ color: var(--white); }
 .section-desc{
@@ -415,33 +416,20 @@ p{ margin:0 0 1em 0; }
   gap: 40px;
   align-items:center;
 }
-.quest-list{ list-style:none; margin: 20px 0; display:flex; flex-direction:column; gap:12px; }
-.quest-list li{
-  font-weight:700;
-  display:flex; align-items:center; gap:10px;
-  background: var(--white);
-  border: 2px solid var(--black);
-  border-radius: 999px;
-  padding: 10px 18px;
-  width: fit-content;
-}
-.quest-list i{ color: var(--blue); }
 .quest-highlight{
   font-family: var(--font-display);
   font-size: 1.25rem;
   margin-top: 16px;
 }
-.quest-visual{ display:flex; flex-direction:column; gap: 16px; }
-.quest-card{
+.quest-visual{
+  margin:0;
   background: var(--white);
   border: 3px solid var(--black);
   border-radius: var(--radius-md);
-  padding: 20px 22px;
+  overflow:hidden;
   box-shadow: var(--shadow-card);
-  display:flex; align-items:center; gap: 16px;
 }
-.quest-card i{ font-size: 1.6rem; color: var(--blue-deep); }
-.quest-card p{ margin:0; font-weight:700; font-style: italic; }
+.quest-visual img{ width:100%; height:auto; object-fit:contain; }
 
 /* ---------- Assembly (06) ---------- */
 .section-black{ background: var(--black); }
@@ -734,7 +722,6 @@ p{ margin:0 0 1em 0; }
   .booth-grid{ grid-template-columns: repeat(2, 1fr); }
   .booth-grid-experience{ grid-template-columns: repeat(2, 1fr); }
   .sub-heading{ font-size: 1.05rem; margin: 40px 0 16px; }
-  .quest-list li{ font-size: 0.92rem; }
   .assembly-question{ font-size: 1.3rem; }
   .aq-card{ font-size: 0.95rem; padding: 20px 14px; }
   .parade-chant{ font-size: 1.4rem; }
@@ -772,9 +759,8 @@ p{ margin:0 0 1em 0; }
   .booth-card{ padding: 18px 14px; }
   .booth-card h4{ font-size: 0.92rem; }
   .booth-card p{ font-size: 0.82rem; }
-  .quest-list li{ width: 100%; font-size: 0.88rem; }
   .quest-highlight{ font-size: 1.05rem; }
-  .quest-card{ padding: 16px 18px; gap: 12px; }
+  .quest-visual{ max-width:720px; margin:24px auto 0; }
   .assembly-questions{ gap: 14px; }
   .aq-card{ font-size: 0.92rem; }
   .parade-chant{ font-size: 1.2rem; }
