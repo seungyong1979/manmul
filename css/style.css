@@ -440,22 +440,24 @@ p{ margin:0 0 1em 0; }
   margin-bottom: 20px;
 }
 .assembly-desc{ color: #cfcfcf; }
-.assembly-questions{
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px;
+.assembly-visual{
+  margin:32px 0;
+  background:var(--white);
+  border:3px solid var(--yellow);
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  box-shadow:var(--shadow-card);
+}
+.assembly-visual img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+/* Keep the illustration visually connected to the dark assembly section. */
+.assembly-note{
+  color:#cfcfcf;
   margin: 32px 0;
 }
-.aq-card{
-  background: #1f2023;
-  border: 2px solid var(--yellow);
-  border-radius: var(--radius-md);
-  padding: 26px 18px;
-  text-align:center;
-  font-weight:700;
-  color: var(--white);
-}
-.assembly-note{ color:#cfcfcf; margin-top: 24px; }
 .assembly-final{
   font-family: var(--font-display);
   font-size: 1.3rem;
@@ -700,7 +702,6 @@ p{ margin:0 0 1em 0; }
   .booth-grid{ grid-template-columns: repeat(2, 1fr); }
   .booth-grid-experience{ grid-template-columns: repeat(2, 1fr); }
   .conf-sessions{ grid-template-columns: 1fr; }
-  .assembly-questions{ grid-template-columns: 1fr; }
   .info-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -723,7 +724,6 @@ p{ margin:0 0 1em 0; }
   .booth-grid-experience{ grid-template-columns: repeat(2, 1fr); }
   .sub-heading{ font-size: 1.05rem; margin: 40px 0 16px; }
   .assembly-question{ font-size: 1.3rem; }
-  .aq-card{ font-size: 0.95rem; padding: 20px 14px; }
   .parade-chant{ font-size: 1.4rem; }
   /* 일정표: 테이블 대신 카드형으로 전환 */
   .table-wrap{ display:none; }
@@ -761,8 +761,7 @@ p{ margin:0 0 1em 0; }
   .booth-card p{ font-size: 0.82rem; }
   .quest-highlight{ font-size: 1.05rem; }
   .quest-visual{ max-width:720px; margin:24px auto 0; }
-  .assembly-questions{ gap: 14px; }
-  .aq-card{ font-size: 0.92rem; }
+  .assembly-visual{ margin:24px 0; }
   .parade-chant{ font-size: 1.2rem; }
   .parade-place{ font-size: 0.88rem; padding: 8px 16px; }
   .sc-prog{ font-size: 0.92rem; }
