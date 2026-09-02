@@ -474,6 +474,15 @@ p{ margin:0 0 1em 0; }
   color: var(--yellow);
   margin: 24px 0;
 }
+.parade-visual{
+  margin:32px 0;
+  background:var(--black);
+  border:3px solid var(--yellow);
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  box-shadow:var(--shadow-card);
+}
+.parade-visual img{ width:100%; height:auto; object-fit:contain; }
 .parade-final{ color:#EAF0FF; font-weight:600; }
 .parade-place{
   display:inline-flex; align-items:center; gap:8px;
