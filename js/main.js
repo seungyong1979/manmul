@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ---- Scroll reveal for cards/sections ----
   var revealTargets = document.querySelectorAll(
-    '.flow-visual, .booth-card, .overview-visual, .quest-card, .aq-card, .conf-session, .info-card, .species-chip'
+    '.flow-visual, .booth-card, .overview-visual, .costume-visual, .quest-card, .aq-card, .conf-session, .info-card'
   );
   revealTargets.forEach(function (el) {
     el.setAttribute('data-reveal', '');

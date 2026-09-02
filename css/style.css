@@ -342,20 +342,15 @@ p{ margin:0 0 1em 0; }
   border: 2px solid var(--black);
   font-size: 0.9rem;
 }
-.costume-species{
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-.species-chip{
-  background: rgba(255,255,255,0.12);
-  border: 2px dashed rgba(255,255,255,0.6);
+.costume-visual{
+  margin:0;
+  background:var(--white);
+  border:3px solid var(--black);
   border-radius: var(--radius-md);
-  padding: 26px 8px;
-  text-align:center;
+  overflow:hidden;
+  box-shadow:var(--shadow-card);
 }
-.species-chip i{ font-size:1.8rem; margin-bottom:8px; display:block; color: var(--yellow); }
-.species-chip span{ font-weight:700; }
+.costume-visual img{ width:100%; height:auto; object-fit:contain; }
 
 /* ---------- Booths (04) ---------- */
 .sub-heading{
@@ -719,8 +714,6 @@ p{ margin:0 0 1em 0; }
   .conf-sessions{ grid-template-columns: 1fr; }
   .assembly-questions{ grid-template-columns: 1fr; }
   .info-grid{ grid-template-columns: repeat(2, 1fr); }
-  .species-chip{ padding: 20px 6px; }
-  .costume-species{ grid-template-columns: repeat(3, 1fr); }
 }
 
 /* ---- Tablet portrait / large mobile (<=768px) ---- */
@@ -737,7 +730,6 @@ p{ margin:0 0 1em 0; }
   .section-title{ font-size: clamp(2rem, 8vw, 2.8rem); }
   .lead{ font-size: 1.1rem; }
   .quote-block{ flex-direction: column; text-align:center; padding: 20px; }
-  .costume-species{ grid-template-columns: repeat(2, 1fr); }
   .costume-questions{ font-size: 1.2rem; }
   .booth-grid{ grid-template-columns: repeat(2, 1fr); }
   .booth-grid-experience{ grid-template-columns: repeat(2, 1fr); }
@@ -772,7 +764,7 @@ p{ margin:0 0 1em 0; }
   .hero-visual{ max-width: 300px; }
   .section-tag{ font-size: 0.85rem; padding: 5px 14px; }
   .section-title{ font-size: clamp(1.7rem, 9vw, 2.2rem); line-height: 1.28; }
-  .costume-species{ grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .costume-visual{ max-width:720px; margin:24px auto 0; }
   .costume-questions{ font-size: 1.05rem; }
   .costume-tags{ gap: 8px; }
   .costume-tags span{ font-size: 0.82rem; padding: 6px 12px; }
@@ -803,7 +795,6 @@ p{ margin:0 0 1em 0; }
   .container{ padding: 0 16px; }
   .hero-title, .section-title{ font-size: 1.6rem; }
   .booth-grid, .booth-grid-experience{ grid-template-columns: 1fr; }
-  .costume-species{ grid-template-columns: 1fr 1fr; }
   .brand{ font-size: 1rem; }
 }
 
