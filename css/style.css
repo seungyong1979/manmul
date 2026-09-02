@@ -60,7 +60,8 @@ p{ margin:0 0 1em 0; }
 
 .section-tag{
   display:inline-block;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:800;
   font-size: 1rem;
   letter-spacing: 0.05em;
   color: var(--blue-deep);
@@ -108,7 +109,8 @@ p{ margin:0 0 1em 0; }
   justify-content: space-between;
 }
 .brand{
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:900;
   font-size: 1.4rem;
   display:flex;
   gap:2px;
@@ -283,7 +285,7 @@ p{ margin:0 0 1em 0; }
   box-shadow: var(--shadow-card);
 }
 .quote-block i{ font-size: 1.4rem; color: var(--blue-deep); }
-.quote-block p{ margin:0; font-family: var(--font-display); font-size: 1.2rem; }
+.quote-block p{ margin:0; font-family: var(--font-body); font-size: 1.2rem; font-weight:800; }
 .overview-invite{
   margin: 28px 0 0;
   color: var(--blue-deep);
@@ -309,7 +311,8 @@ p{ margin:0 0 1em 0; }
 .flow-visual img{ width:100%; height:auto; }
 .flow-closing{
   text-align:center;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:800;
   font-size: 1.4rem;
   color: var(--black);
   margin-top: 16px;
@@ -325,7 +328,8 @@ p{ margin:0 0 1em 0; }
   align-items:center;
 }
 .costume-questions{
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:800;
   font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -417,7 +421,8 @@ p{ margin:0 0 1em 0; }
   align-items:center;
 }
 .quest-highlight{
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:800;
   font-size: 1.25rem;
   margin-top: 16px;
 }
@@ -434,7 +439,8 @@ p{ margin:0 0 1em 0; }
 /* ---------- Assembly (06) ---------- */
 .section-black{ background: var(--black); }
 .assembly-question{
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:800;
   font-size: clamp(1.4rem, 2.6vw, 2rem);
   color: var(--yellow);
   margin-bottom: 20px;
@@ -459,7 +465,8 @@ p{ margin:0 0 1em 0; }
   margin: 32px 0;
 }
 .assembly-final{
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:800;
   font-size: 1.3rem;
   color: var(--yellow);
   margin-top: 10px;
@@ -469,7 +476,8 @@ p{ margin:0 0 1em 0; }
 #parade.section-blue{ text-align:center; }
 .parade-desc{ max-width: 720px; margin: 0 auto 24px; color: #EAF0FF; }
 .parade-chant{
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:800;
   font-size: clamp(1.4rem, 3vw, 2.1rem);
   color: var(--yellow);
   margin: 24px 0;
@@ -514,11 +522,13 @@ p{ margin:0 0 1em 0; }
 .schedule-table thead th{
   background: var(--black);
   color: var(--yellow);
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:800;
   font-size: 1rem;
 }
 .schedule-table td.cat{
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:800;
   text-align:center;
   vertical-align: middle;
   font-size: 1.05rem;
@@ -545,14 +555,16 @@ p{ margin:0 0 1em 0; }
   margin-bottom: 8px;
 }
 .sc-cat{
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:800;
   font-size: 0.85rem;
   padding: 4px 12px;
   border-radius: 999px;
   border: 1px solid var(--black);
 }
 .sc-time{
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:800;
   font-size: 1.1rem;
   color: var(--blue-deep);
 }
@@ -592,7 +604,8 @@ p{ margin:0 0 1em 0; }
   width: 30px; height:30px;
   border-radius: 50%;
   display:inline-flex; align-items:center; justify-content:center;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight:800;
   font-size: 0.95rem;
 }
 .conf-role{ font-size: 0.88rem; color: var(--gray-text); margin-bottom: 10px; }
@@ -641,7 +654,7 @@ p{ margin:0 0 1em 0; }
   text-align:center;
   position: relative;
 }
-.footer-brand{ font-family: var(--font-display); color: var(--yellow); font-size:1.3rem; margin-bottom: 8px; }
+.footer-brand{ font-family: var(--font-body); font-weight:900; color: var(--yellow); font-size:1.3rem; margin-bottom: 8px; }
 .footer-inner p{ margin: 4px 0; font-size: 0.88rem; }
 .footer-inner a{ color: var(--yellow); }
 .footer-copy{ margin-top: 12px; color: #666; }
