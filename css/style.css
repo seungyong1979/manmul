@@ -234,7 +234,10 @@ p{ margin:0 0 1em 0; }
 }
 .btn-outline:hover{ transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--black); }
 
+.hero-visual{ min-width:0; }
 .hero-visual img{
+  width:100%;
+  height:auto;
   border-radius: var(--radius-md);
   border: 4px solid var(--black);
   box-shadow: var(--shadow-card);
