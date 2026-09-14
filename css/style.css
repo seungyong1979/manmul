@@ -571,6 +571,18 @@ p{ margin:0 0 1em 0; }
   font-size:0.82rem;
   font-weight:800;
 }
+.schedule-event-list{
+  display:grid;
+  gap:4px;
+  text-align:left;
+}
+.schedule-event-list > span{
+  display:grid;
+  grid-template-columns:3.2rem 1fr;
+  gap:8px;
+}
+.schedule-event-list b{ color:var(--blue-deep); }
+.sc-card .schedule-event-list{ margin-bottom:8px; }
 .schedule-table tbody tr:hover{ background: #FFFBEA; }
 
 /* 모바일 전용 일정 카드 (기본: 숨김, 768px 이하에서 표시) */
