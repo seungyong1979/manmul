@@ -526,6 +526,11 @@ p{ margin:0 0 1em 0; }
   text-align:left;
   font-size: 0.95rem;
 }
+.schedule-table th:first-child,
+.schedule-table td:first-child{
+  width: 92px;
+  text-align:center;
+}
 .schedule-table thead th{
   background: var(--black);
   color: var(--yellow);
@@ -543,6 +548,29 @@ p{ margin:0 0 1em 0; }
 .cat-academy{ background: var(--yellow-soft); }
 .cat-festival{ background: #EAF0FF; }
 .cat-parade{ background: var(--blue); color: var(--white); }
+.ongoing-program,
+.parallel-program{
+  text-align:center !important;
+  vertical-align:middle;
+}
+.ongoing-program{ min-width:220px; }
+.parallel-program{ min-width:170px; }
+.schedule-program-group + .schedule-program-group{ margin-top:28px; }
+.schedule-program-group{ display:flex; flex-direction:column; align-items:center; gap:7px; }
+.schedule-label{
+  display:inline-block;
+  padding:3px 12px;
+  border-radius:999px;
+  background:#EEF3E8;
+  color:#35543B;
+  font-size:0.78rem;
+  font-weight:800;
+}
+.schedule-period{
+  color:var(--blue-deep);
+  font-size:0.82rem;
+  font-weight:800;
+}
 .schedule-table tbody tr:hover{ background: #FFFBEA; }
 
 /* 모바일 전용 일정 카드 (기본: 숨김, 768px 이하에서 표시) */
