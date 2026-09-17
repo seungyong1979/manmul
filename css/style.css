@@ -376,10 +376,10 @@ p{ margin:0 0 1em 0; }
 .sub-heading i{ color: var(--blue); }
 .booth-grid{
   display:grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
-.booth-grid-experience{ grid-template-columns: repeat(5, 1fr); }
+.booth-grid-experience{ grid-template-columns: repeat(3, 1fr); }
 .booth-card{
   background: var(--white);
   border: 3px solid var(--black);
