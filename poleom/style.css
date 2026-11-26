@@ -12,3 +12,41 @@ dialog .reader-dock{position:fixed;bottom:0;left:0;right:0;padding:12px 20px cal
 .page-text .text-contents{margin:.4em 0;padding-left:1em;border-left:3px solid #b7d4bf;color:#365f48}
 .page-text .text-note{font-size:.9em;line-height:1.75;white-space:pre-line;border-top:1px solid #d6dfd6;padding:1em 0;margin-top:2em;color:#58685f}
 .page-text strong{font-weight:800;color:#233c32}
+
+/* Original booklet contents: pink badges, dotted leaders and printed pages. */
+.library{background:#fff;max-width:1176px;padding:44px 48px 70px;border:0;color:#151515}
+.toc-masthead{width:100%;aspect-ratio:990/220;overflow:hidden;margin-bottom:25px}
+.toc-masthead img{display:block;width:100%;height:auto;margin-top:-3%}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.toc-help{font-size:15px;color:#59615c;margin:0 0 28px}
+.library .search-label{margin-top:0}.library input{background:#fff;border-color:#d4d9d5}
+.library .filters button{border-color:#e5bac6}.library .filters button.active{background:#bd365b;border-color:#bd365b}
+.toc-group{display:grid;grid-template-columns:86px minmax(0,1fr);gap:22px;margin:52px 0 65px}
+.toc-badge{align-self:start;text-align:center;font-size:22px;line-height:1.4;margin:10px 0 0;padding:6px 10px;border-radius:8px;background:#e97696;color:#fff}
+.toc-entry.article{display:grid;grid-template-columns:72px minmax(0,1fr);gap:12px;padding:12px 0 18px;border:0;color:#121212}
+.toc-entry:hover{background:#fff4f7}.toc-entry:focus-visible{outline-color:#ad3152}
+.toc-type{color:#ba3559;font-weight:800;font-size:22px;line-height:1.5;white-space:nowrap}
+.toc-copy{min-width:0}.toc-title-line{display:flex;gap:7px;align-items:baseline}
+.toc-title{font-size:22px;font-weight:800;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.toc-dots{flex:1;min-width:18px;border-bottom:2px dotted #aaa}
+.toc-page{font-size:21px;line-height:1.5;font-variant-numeric:tabular-nums}
+.toc-author{display:block;margin-top:8px;padding-left:16px;position:relative;font-size:14px;line-height:1.7;font-weight:400}
+.toc-author::before{content:'';position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:50%;background:#e97696}
+.toc-author strong{font-size:18px;font-weight:600}.toc-discussion{display:table;background:#e97696;color:white;border-radius:4px;padding:1px 9px;font-size:17px;font-weight:700;margin:25px 0 0}
+.toc-group[aria-label="인사말"] .toc-entry{grid-template-columns:minmax(0,1fr)}
+.toc-group[aria-label="인사말"] .toc-type{display:none}
+@media(max-width:700px){
+ .library.section{margin:0;padding:28px 20px 45px}
+ .toc-masthead{margin:0 -8px 14px;width:calc(100% + 16px)}
+ .toc-help{font-size:14px;line-height:1.65;margin-bottom:22px}
+ .toc-group{grid-template-columns:1fr;gap:15px;margin:32px 0 42px}
+ .toc-badge{justify-self:start;min-width:74px;margin:0;font-size:20px;padding:5px 13px}
+ .toc-entry.article{grid-template-columns:1fr;gap:4px;padding:12px 0 22px}
+ .toc-type{font-size:17px}.toc-title{font-size:20px;line-height:1.55}.toc-page{font-size:18px}
+ .toc-title-line{gap:6px}.toc-dots{min-width:12px}
+ .toc-author{font-size:14px;margin-top:7px}.toc-author strong{font-size:17px}
+ .toc-discussion{font-size:16px;margin:18px 0 4px}
+}
+
+.toc-search{border-bottom:1px solid #f0d5dd;padding:0 0 14px}.toc-search summary{cursor:pointer;color:#a92c50;font-size:15px;min-height:30px}.toc-search[open] summary{margin-bottom:18px}.toc-search .filters{margin-bottom:5px}
+.toc-page{flex:0 0 auto;white-space:nowrap;min-width:2ch;text-align:right}.toc-title{min-width:0}.toc-dots{flex-shrink:0}
